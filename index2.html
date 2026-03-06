@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dem"></p>
+    <h1 id="demo" class="demo"></h1>
+
+    <button id="button">Click here</button>
+    <h2 id="main" class="intro"></h2>
+
+    <h1>JavaScript HTML DOM</h1>
+    <h2>The querySelectorAll() Method</h2>
+
+    <p class="demo">One</p>
+    <p class="demo">Two</p>
+
+    <script>
+        document.getElementById("demo").innerHTML="Hello";
+        document.getElementById('demo').innerHTML="Pradeesh";
+
+        document.getElementById("button").onclick=function myFun(){
+            alert("Web development is fun...!!🗣️😭");
+        }
+
+        const myPara=document.getElementsByClassName("abc");
+        myPara.innerHTML=("hello");
+
+        const element = document.getElementsByTagName("h2");
+        element.innerHTML="Hi";
+
+        const x = document.getElementById("main");
+        const y = document.getElementsByTagName("p");
+        x.innerHTML="Hello";
+        y.innerHTML="Vanakam";
+
+        const a = document.getElementsByClassName("intro");
+
+        const myItems = document.querySelectorAll(".demo");
+
+        myItems[0].innerHTML = "First";
+
+    </script>
+</body>
+</html>

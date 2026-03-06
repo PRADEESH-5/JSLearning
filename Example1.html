@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <ul id="desserts">
+        <li>Cake</li>
+        <li>Pie</li>
+    </ul>
+
+<section id="example-section">
+  <h2>Example sub heading</h2>
+  <p>first paragraph</p>
+  <p>second paragraph</p>
+</section>
+
+<script>
+    const dessertsList = document.getElementById("desserts");
+    const listItem = document.createElement("li");
+    dessertsList.appendChild(listItem);
+
+    const sectionEl = document.getElementById("example-section");
+    const lastParagraph = document.querySelector("#example-section p:last-of-type");
+    lastParagraph.innerHTML()
+    sectionEl.removeChild(lastParagraph);
+
+    console.log(navigator.geolocation);
+</script>
+</body>
+</html>
